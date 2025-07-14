@@ -2,6 +2,7 @@
   padding: 10px 10px;
   background-color: rgb(89, 89, 219);
   color: white;
+  margin: 10px;
 }
 header {
   display: flex;
