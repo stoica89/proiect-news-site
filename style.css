@@ -1,9 +1,3 @@
-.update-btn {
-  padding: 10px 10px;
-  background-color: rgb(89, 89, 219);
-  color: white;
-  margin: 10px;
-}
 header {
   display: flex;
   height: 150px;
@@ -17,10 +11,16 @@ header img {
   border: 1px solid gray;
 }
 .logo-container {
-background-color: rgb(236, 215, 187);
+background-color: rgb(117, 110, 101);
 }
 h2 {
   text-align: center;
+}
+.update-btn {
+  padding: 10px 10px;
+  background-color: rgb(85, 85, 107);
+  color: white;
+  margin: 10px;
 }
 .source-news {
   height: 100px;
