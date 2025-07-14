@@ -21,6 +21,10 @@ updateBtn.addEventListener("click", () => {
   getNews();
 });
 function app(articles) {
+  firstArticle = articles[0];
+  sideNewsContainer.innerHTML = `
+    <img src="${firstArticle.urlToImage}"alt="tesla-img" class="side-img"/>
+  `;
   let newsNo = 10;
   for (let i = 0; i < newsNo; ++i) {
     const article = articles[i];
