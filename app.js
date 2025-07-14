@@ -1,4 +1,5 @@
-const urlAdress ="https://newsapi.org/v2/everything?q=apple&from=2025-07-13&to=2025-07-13&sortBy=popularity&apiKey=c97a3ce916e344208df1c867748b6a35";
+const urlAdress =
+  "https://newsapi.org/v2/everything?q=apple&from=2025-07-13&to=2025-07-13&sortBy=popularity&apiKey=c97a3ce916e344208df1c867748b6a35";
 const containerNews = document.querySelector(".container-news");
 const sideNewsContainer = document.querySelector(".side-news-container");
 const updateBtn = document.querySelector(".update-btn");
@@ -39,10 +40,12 @@ function app(articles) {
   }
   let sideNewsNo = 20;
   for (let j = 0; j < sideNewsNo; ++j) {
-    const sideArticle = articles[j]
+    const sideArticle = articles[j];
     sideNewsContainer.innerHTML += `
     <div class="side-news">
-        <h2 class="side-news-title">${sideArticle.title || "Titlu Indisponibil"} </h2>
+        <h2 class="side-news-title">${
+          sideArticle.title || "Titlu Indisponibil"
+        } </h2>
         <p>${sideArticle.content || "Continut Indisponibil"}</p>
       </div>
     `;
