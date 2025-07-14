@@ -22,7 +22,7 @@ updateBtn.addEventListener("click", () => {
   getNews();
 });
 function app(articles) {
-  firstArticle = articles[0];
+  const firstArticle = articles[0];
   sideNewsContainer.innerHTML = `
     <img src="${firstArticle.urlToImage}"alt="tesla-img" class="side-img"/>
   `;
@@ -33,7 +33,7 @@ function app(articles) {
     <div class="news">
       <h4>${article.title || "Titlu Indisponibil"} </h4>
       <p>${article.content || "Continut Indisponbil"}</p>
-      <img src="${article.urlToImage} " alt="news-image">
+      <img src="${article.urlToImage || "fallback.jpg"} " alt="news-image">
       <p>${article.publishedAt}</p>
     </div>
    `;
