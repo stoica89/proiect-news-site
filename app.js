@@ -1,5 +1,5 @@
 const urlAdress =
-  "https://newsapi.org/v2/everything?q=apple&from=2025-07-13&to=2025-07-13&sortBy=popularity&apiKey=c97a3ce916e344208df1c867748b6a35";
+  "https://newsapi.org/v2/everything?q=tesla&from=2025-06-22&sortBy=publishedAt&apiKey=c97a3ce916e344208df1c867748b6a35";
 const containerNews = document.querySelector(".container-news");
 const sideNewsContainer = document.querySelector(".side-news-container");
 const updateBtn = document.querySelector(".update-btn");
